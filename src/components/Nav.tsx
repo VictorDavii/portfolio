@@ -29,16 +29,32 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        
-        
-
         <div className="ml-2 flex items-center gap-2">
-              {[{ I: Github, h: "https://github.com/VictorDavii" }, { I: Linkedin, h: "https://www.linkedin.com/in/victor-davi-camacho-pereira-579b4412a/" }, { I: Mail, h: "dev.victordavi@gmail.com" }].map(({ I, h }, i) => (
-                <a key={i} href={h} className="rounded-full glass p-2.5 text-muted-foreground hover:text-foreground transition">
-                  <I className="h-4 w-4" />
-                </a>
-              ))}
-        </div>
+          {[
+            {
+              I: Github,
+              h: "https://github.com/VictorDavii",
+            },
+            {
+              I: Linkedin,
+              h: "https://www.linkedin.com/in/victor-davi-camacho-pereira-579b4412a/",
+            },
+            {
+              I: Mail,
+              h: "mailto:dev.victordavi@gmail.com",
+            },
+          ].map(({ I, h }, i) => (
+            <a
+              key={i}
+              href={h}
+              target={h.startsWith("http") ? "_blank" : undefined}
+              rel={h.startsWith("http") ? "noopener noreferrer" : undefined}
+              className="rounded-full glass p-2.5 text-muted-foreground hover:text-foreground transition"
+            >
+              <I className="h-4 w-4" />
+            </a>
+          ))}
+      </div>     
       </div>
     </header>
   );

@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import perfil from "@/assets/perfil.jpeg";
-/**
- * Intro hero — preceeds the ScrollyCanvas.
- * Uses the user's profile photo as the visual anchor with floating orbits.
- */
+
+
 export function Hero() {
   return (
     <section className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 pt-32 pb-20">
@@ -38,8 +36,13 @@ export function Hero() {
             <a href="#projects" className="group relative overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-medium text-background transition hover:shadow-[0_0_40px_rgba(180,160,255,0.5)]">
               Explorar trabalhos
             </a>
-            <a href="#contact" className="group relative overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-medium text-background transition hover:shadow-[0_0_40px_rgba(180,160,255,0.5)]">
-              Iniciar contato
+            <a
+                href="https://wa.me/5511932812722"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-medium text-background transition hover:shadow-[0_0_40px_rgba(180,160,255,0.5)]"
+              >
+                Iniciar contato
             </a>
           </motion.div>
         </div>

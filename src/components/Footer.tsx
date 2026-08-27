@@ -4,8 +4,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl">
         <p className="font-mono text-xs tracking-[0.4em] uppercase text-accent/80 mb-4">06 · Contato</p>
         <h2 className="text-5xl md:text-7xl font-semibold tracking-tight max-w-3xl">
-          Vamos construir
-          <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent"> algo útil</span>.
+          Aberto para novos 
+          <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent"> projetos e oportunidades</span>.
         </h2>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <a href="mailto:dev.victordavi@gmail.com" className="rounded-full bg-white px-7 py-4 text-sm font-medium text-background hover:shadow-[0_0_40px_rgba(180,160,255,0.6)] transition">
